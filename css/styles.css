@@ -8,10 +8,35 @@
   --active-blue: #404bbf;
   --light-text: #ffffff;
 }
+.hidden {
+  display: none;
+}
+
+/* Function */
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  padding: 0px 15px;
+  margin: 0 auto;
 }
 .list {
   list-style: none;
@@ -20,6 +45,9 @@ body {
 .link {
   font-style: normal;
   text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu .link:hover,
 .menu .link:focus {
@@ -43,6 +71,7 @@ body {
 }
 
 /* header */
+
 .logo-blue {
   color: var(--main-blue);
 }
@@ -54,6 +83,21 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  margin-right: 76px;
+}
+.page-header {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.address-menu {
+  display: flex;
+  margin-left: 332px;
+}
+.page-nav {
+  display: flex;
 }
 .menu-link {
   font-weight: 500;
@@ -61,6 +105,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 .address-link {
   font-style: normal;
@@ -71,15 +122,22 @@ body {
 }
 
 /* Main Section */
-.head-section {
-  background: var(--dark-bg);
+
+.dark-bgc {
+  width: 1440px;
+  background-color: var(--dark-bg);
+  margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
 .main-head {
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--light-text);
+  margin-bottom: 48px;
 }
 .main-btn {
   font-family: Roboto, sans-serif;
@@ -92,6 +150,35 @@ body {
   color: var(--light-text);
   background-color: var(--main-blue);
   border-radius: 4px;
+
+  margin-left: 636px;
+  margin-bottom: 188px;
+  padding: 16px 32px;
+}
+
+/*  ABOUT WEBSTUDIO SECTION */
+
+.examples-list {
+  display: flex;
+}
+.examples-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.examples-list-head {
+  margin-top: 120px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.examples-list-descr {
+  width: 264px;
+  margin-top: 8px;
+  margin-bottom: 120px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .section-head {
   font-size: 36px;
@@ -100,10 +187,65 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.team {
-  background-color: var(--light-bg);
+
+/* WHAT ARE WE DOIG */
+
+.img-list {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 120px;
 }
+.image-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*  OUR TEAM */
+
+.light-bgc {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: var(--light-bg);
+  height: 732px;
+  width: 1440px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-head {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.team-list-item {
+  background-color: #ffffff;
+  width: 264px;
+  height: 380px;
+}
+
+.team-list-head {
+  margin: 32px 65px 8px 65px;
+  text-align: center;
+}
+.team-list-descr {
+  text-align: center;
+}
+
 /* Portfolio */
+.portfolio {
+  padding-top: 96px;
+}
+.nav-btns-list {
+  display: flex;
+  justify-content: center;
+}
+.nav-btns-item:not(:last-child) {
+  margin-right: 24px;
+}
 .nav-btn {
   font-family: inherit;
   font-weight: 500;
@@ -116,30 +258,67 @@ body {
   background-color: var(--light-bg);
   border: 1px solid var(--border-textfooter);
   border-radius: 4px;
+
+  padding: 12px 24px;
 }
-.examples-list-head {
+
+.portfolio-list {
+  padding-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+  height: 420px;
+  border: 1px;
+  border-color: var(--border-textfooter);
+}
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-list-item:nth-last-child() {
+  margin-bottom: 0;
+}
+.portfolio-list-head {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
-.examples-list-descr {
+.portfolio-list-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 /* Footer */
+
+.dark-bgc-foot {
+  width: 1440px;
+  height: 310px;
+  padding-top: 100px;
+  background: var(--dark-bg);
+  margin: 0 auto;
+}
 .footer-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--border-textfooter);
-}
-.page-footer {
-  background: var(--dark-bg);
+  margin-bottom: 100px;
+  margin-left: 156px;
+  width: 264px;
 }
 .foot {
+  display: block;
   color: var(--light-bg);
+  margin-bottom: 16px;
+  margin-left: 156px;
+  width: 115px;
 }
