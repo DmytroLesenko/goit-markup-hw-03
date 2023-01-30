@@ -155,9 +155,8 @@ img {
 }
 
 /*  ABOUT WEBSTUDIO SECTION */
-.section {
+.about-section {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 .examples-list {
   display: flex;
