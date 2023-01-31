@@ -154,9 +154,7 @@ img {
 }
 
 /*  ABOUT WEBSTUDIO SECTION */
-.about-section {
-  padding-top: 120px;
-}
+
 .examples-list {
   display: flex;
   /* margin-left: -24px;
@@ -194,7 +192,9 @@ img {
 }
 
 /* WHAT ARE WE DOIG */
-
+.section-bottom-padding {
+  padding-bottom: 120px;
+}
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
