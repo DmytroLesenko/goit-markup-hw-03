@@ -88,6 +88,8 @@ img {
 .page-header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: var(--border-textfooter);
 }
 .menu {
   display: flex;
@@ -243,7 +245,7 @@ img {
 .padding-descr {
   padding-top: 32px;
   padding-bottom: 32px;
-  border: 1px;
+  border: 1px solid;
   border-color: var(--border-textfooter);
 }
 /* Portfolio */
